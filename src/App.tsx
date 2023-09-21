@@ -1,11 +1,14 @@
 import Greet from './components/Greet';
-import Person from './components/Person';
-import PersonList from './components/PersonList';
+/*import Person from './components/Person';
+import PersonList from './components/PersonList';*/
+import FictionAward from './components/FictionAward';
+import Heading from './components/Heading';
+import Status from './components/Status';
 import './App.css';
 
 function App() {
 
-    const personName = {
+    /*const personName = {
         first: 'Thomas',
         last: 'Anderson',
     }
@@ -27,21 +30,26 @@ function App() {
             first: 'Robert',
             last: 'McCall'
         },
-    ]
+    ]*/
 
     return (
         <div className="App">
             <Greet
                 name='Ricardo'
-                messageCount={10}
                 isLoggedIn={true}
             />
-            <Person 
+            <Status 
+                status='error'
+            />
+            <FictionAward>
+                <Heading>The best fictional character award goes to... Johnny Silverhand</Heading>
+            </FictionAward>
+            {/*<Person 
                 name={personName}
             />
             <PersonList 
                 names={nameList}
-            />
+            />*/}
         </div>
     );
 }
