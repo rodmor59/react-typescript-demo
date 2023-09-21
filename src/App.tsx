@@ -1,11 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import Greet from './components/Greet';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+    return (
+        <div className="App">
+            <Greet name='Ricardo' />
+        </div>
+    );
+}
+
+export default App;
+
+/*
+import React from 'react';
+import logo from './logo.svg';
+
+<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -19,8 +29,4 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+*/
