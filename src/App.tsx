@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import Container from './components/Container';
 import Greet from './components/Greet';
 import Input from './components/Input';
 import Person from './components/Person';
@@ -11,6 +12,17 @@ import './App.css';
 // Types
 type ButtonMouseEvent = React.MouseEvent<HTMLButtonElement>
 type InputChangeEvent = React.ChangeEvent<HTMLInputElement>
+
+// Miscellaneous consts
+const containerStyles = {
+    borderRadius: '10px',
+    boxShadow: '1px 2px 9px gray',
+    color: '#2b03a9',
+    fontWeight: 'bold',
+    maxWidth: '300px',
+    margin: 'auto',
+    marginBottom: '30px'
+}
 
 // Message Consts
 const logMsgClickHandled = 'Click handled';
@@ -52,6 +64,7 @@ function App() {
 
     return (
         <div className="App">
+            <h2>React TypeScript Demo</h2>
             <h2>Basic Props</h2>
             <h3>Greet Component</h3>
             <Greet
@@ -82,6 +95,8 @@ function App() {
             <div>
                 Input: <Input value='' onChange={(handleChange)} handleChangeInternally={true} />
             </div>
+            <h3>Style Props</h3>
+            <Container styles={containerStyles}/>
         </div>
     );
 }
