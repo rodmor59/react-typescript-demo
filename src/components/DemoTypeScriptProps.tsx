@@ -53,11 +53,11 @@ function GroupTypeScriptProps() {
         },
     ]
 
-    const handleClick = (event: ButtonMouseEvent, id: number) => {
+    function handleClick(event: ButtonMouseEvent, id: number) {
         console.log(logMsgClickHandled, event, id)
     }
 
-    const handleChange = (event: InputChangeEvent) => {
+    function handleChange(event: InputChangeEvent) {
         console.log(logMsgInputChangeHandled, event)
     }
 

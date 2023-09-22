@@ -1,14 +1,14 @@
 import { useState } from "react"
 
-const LoggedIn = () => {
+function LoggedIn() {
 
     const [ isLoggedIn, setIsLoggedIn ] = useState(false)
 
-    const handleClickLogin = () => {
+    function handleClickLogin() {
         setIsLoggedIn(true)
     }
 
-    const handleClickLogout = () => {
+    function handleClickLogout() {
         setIsLoggedIn(false)
     }
 
