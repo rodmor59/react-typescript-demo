@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    margin-bottom: 50px; /* Insert some space between the end of the app and the bottom of the page*/
 }
 
 .App-logo {
