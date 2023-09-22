@@ -26,7 +26,6 @@ function User () {
         // User is logged in (user is not null)
         return (
             <div>
-                <h3>useState can accept multiple types</h3>
                 <div>
                     <button onClick={handleLogout}>Logout</button>
                 </div>
@@ -44,7 +43,6 @@ function User () {
     return (
         // User has not logged in yet (user is null)
         <div>
-            <h3>useState can accept multiple types</h3>
             <div>
                 <button onClick={handleLogin}>Login</button>
             </div>
