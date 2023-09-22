@@ -2,9 +2,9 @@ type StatusProps = {
     status: 'loading' | 'success' | 'error';
 }
 
-function Status (props: StatusProps) {
+function Status ({ status }: StatusProps) {
     let message
-    switch (props.status) {
+    switch (status) {
         case 'loading':
             message = 'Loading...'
             break

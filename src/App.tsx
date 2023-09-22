@@ -82,7 +82,7 @@ function App() {
             <h2>Advanced Props</h2>
             <h3>Status Component</h3>
             <Status 
-                status='error'
+                status='loading'
             />
             <h3>Fiction Award and Heading Components</h3>
             <FictionAward>

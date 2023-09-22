@@ -8,9 +8,7 @@ type InputProps = {
 
 const logMsgInputChangeHandled = 'Input change handled internally';
 
-function Input (props: InputProps) {
-
-    const { handleChangeInternally = false } = props
+function Input ({value, onChange, handleChangeInternally = false}: InputProps) {
 
     function handleInputChange (event: InputChangeEvent) {
         // An input component can handle onChange in the same component or let a function received as a prop handle it
@@ -18,11 +16,11 @@ function Input (props: InputProps) {
             console.log(logMsgInputChangeHandled, event)
             return
         }
-        props.onChange(event)
+        onChange(event)
     }
 
     return (
-        <input type='text' value={props.value} onChange={handleInputChange}></input>
+        <input type='text' value={value} onChange={handleInputChange}></input>
     )
 }
 

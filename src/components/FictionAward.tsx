@@ -2,8 +2,8 @@ type fictionAwardProps = {
     children: React.ReactNode
 }
 
-function FictionAward (props: fictionAwardProps) {
-    return <div>{props.children}</div>
+function FictionAward ({ children }: fictionAwardProps) {
+    return <div>{children}</div>
 }
 
 export default FictionAward

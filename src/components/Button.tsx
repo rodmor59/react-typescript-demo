@@ -5,20 +5,18 @@ type ButtonProps = {
     onClick: (event: ButtonMouseEvent, id: number) => void
 }
 
-function Button (props: ButtonProps) {
-
-    function handleClick (event: ButtonMouseEvent) {
+function Button({ onClick, children}: ButtonProps) {
+    function handleClick(event: ButtonMouseEvent) {
         /*
         This handleClick function passes an id when calling its props.Onclick function. As a result the handler
         function in the parent component can identify which component called it, which can be useful to be able to
         use a single handleClick funtion for multiple components and to determine a unique behaviour of the handleClick 
         function for each one.
         */
-        props.onClick(event, 1) 
+        onClick(event, 1)
     }
-
     return (
-        <button onClick={handleClick}>{props.children}</button>
+        <button onClick={handleClick}>{children}</button>
     )
 }
 
