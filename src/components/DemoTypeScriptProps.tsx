@@ -53,11 +53,11 @@ function GroupTypeScriptProps() {
         },
     ]
 
-    const handleClick = (event: ButtonMouseEvent, id: number) => {
+    function handleClick(event: ButtonMouseEvent, id: number) {
         console.log(logMsgClickHandled, event, id)
     }
 
-    const handleChange = (event: InputChangeEvent) => {
+    function handleChange(event: InputChangeEvent) {
         console.log(logMsgInputChangeHandled, event)
     }
 
@@ -87,14 +87,14 @@ function GroupTypeScriptProps() {
             <FictionAward>
                 <Heading>The best fictional character award goes to... Johnny Silverhand</Heading>
             </FictionAward>
-            <h3>Event Props</h3>
+            <h3>Event Props (Button and Input Components)</h3>
             <div>
                 Button: <Button onClick={handleClick}>Accept</Button>
             </div>
             <div>
                 Input: <Input value='' onChange={(handleChange)} handleChangeInternally={true} />
             </div>
-            <h3>Style Props</h3>
+            <h3>Style Props Container Component</h3>
             <Container styles={containerStyles}/>
         </div>
     );

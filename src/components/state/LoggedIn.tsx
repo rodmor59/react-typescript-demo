@@ -1,14 +1,14 @@
 import { useState } from "react"
 
-const LoggedIn = () => {
+function LoggedIn() {
 
     const [ isLoggedIn, setIsLoggedIn ] = useState(false)
 
-    const handleClickLogin = () => {
+    function handleClickLogin() {
         setIsLoggedIn(true)
     }
 
-    const handleClickLogout = () => {
+    function handleClickLogout() {
         setIsLoggedIn(false)
     }
 
@@ -17,7 +17,6 @@ const LoggedIn = () => {
         return (
             // Return logout button and logged in text when user is logged in 
             <div>
-                <h3>useState Hook</h3>
                 <div>User is logged in</div><br />
                 <div><button onClick={handleClickLogout}>Logout</button></div>
             </div>
@@ -27,7 +26,6 @@ const LoggedIn = () => {
     return (
         // Return login button and logged out text when user is logged in 
         <div>
-            <h3>useState Hook</h3>
             <div>User is logged out</div><br />
             <div><button onClick={handleClickLogin}>Login</button></div>
         </div>

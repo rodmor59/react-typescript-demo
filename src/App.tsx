@@ -1,13 +1,12 @@
 import './App.css';
-import GroupTypeScriptProps from './components/GroupTypeScriptProps';
-import LoggedIn from './components/state/LoggedIn';
+import DemoTypeScriptProps from './components/DemoTypeScriptProps';
+import DemoTypeScriptStateHooks from './components/DemoTypeScriptStateHooks';
 
 function App() {
     return <div className="App">
         <h1>React TypeScript Demo</h1>
-        <GroupTypeScriptProps />
-        <h2>TypeScript with React useState</h2>
-        <LoggedIn />
+        <DemoTypeScriptProps />
+        <DemoTypeScriptStateHooks />
     </div>
 }
 
