@@ -8,7 +8,7 @@ function PersonList ({ names }: PersonListProps) {
     return (
         <div>
             {names.map(name => 
-                <h4 key={name.first}>{name.first} {name.last}</h4>
+                <h5 key={name.first}>{name.first} {name.last}</h5>
             )}
         </div>
     )
