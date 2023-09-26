@@ -37,6 +37,9 @@ Following is a list of the components and the features of TypeScript each demons
 * **User With Type Assertions:** React component with type assertions for the useState Hook.
 * **Counter:** Component that uses the useReducer Hook with Strict Types (union types) for its actions.
 
+./src/components/context
+* **useContext Hook:** 3 components (theme, ThemeContext and Box) that demostrates the useContext Hook implemented with TypeScript.
+
 ### Components to Add in the Future
 
 * useContext Hook.
@@ -152,6 +155,11 @@ README.md
     ├── [components]
         ├── Button.tsx
         ├── Container.tsx
+        ├── [context]
+            ├── Box.tsx
+            ├── theme.ts
+            └── ThemeContext.tsx
+        ├── DemoTypeScriptContextHook.tsx
         ├── DemoTypeScriptProps.tsx
         ├── DemoTypeScriptStateHooks.tsx
         ├── FictionAward.tsx
