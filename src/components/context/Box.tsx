@@ -6,7 +6,8 @@ export default function Box () {
 
     const style = {
         backgroundColor: theme.primary.main,
-        color: theme.primary.text
+        color: theme.primary.text,
+        fontWeight: theme.fontWeight
     }
 
     return (

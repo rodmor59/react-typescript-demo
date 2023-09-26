@@ -38,12 +38,11 @@ Following is a list of the components and the features of TypeScript each demons
 * **Counter:** Component that uses the useReducer Hook with Strict Types (union types) for its actions.
 
 ./src/components/context
-* **useContext Hook:** 3 components (theme, ThemeContext and Box) that demostrates the useContext Hook implemented with TypeScript.
+* **useContext Hook:** 3 components (theme, ThemeContext and Box) that demonstrates the useContext Hook implemented with TypeScript.
+* **User and UserContext:** Demonstrate using the useContext Hook in TypeScript with union types (Defining types that can be a null or a defined type value). 
 
 ### Components to Add in the Future
 
-* useContext Hook.
-* useContext Hook with union types.
 * useRef Hook.
 * Class Component.
 * Component Props.
