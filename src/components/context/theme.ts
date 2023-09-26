@@ -6,5 +6,6 @@ export const theme = {
     secondary: {
         main: '#f50057',
         text: '#fff'
-    }
+    },
+    fontWeight: 'bold'
 }
