@@ -40,12 +40,18 @@ Following is a list of the components and the features of TypeScript each demons
 ./src/components/context
 * **useContext Hook:** 3 components (theme, ThemeContext and Box) that demonstrates the useContext Hook implemented with TypeScript.
 * **User and UserContext:** Demonstrate using the useContext Hook in TypeScript with union types (Defining types that can be a null or a defined type value).
+
+./src/components/ref
 * **DomRef and MutableRef:** * useRef Hook with TypeScript.
+
+./src/components/class
 * **Class Counter:** Demonstates the typin of classes in TypeScript.
+
+./src/components/auth
+* **Private, Profile, Login and Auth:** These components demonstrate how to type components when passing a component as props to another.
 
 ### Components to Add in the Future
 
-* Component Props.
 * Generic Props.
 * Restricting Props.
 * Template Literals and Exclude.
@@ -152,6 +158,11 @@ README.md
     ├── App.test.tsx
     ├── App.tsx
     ├── [components]
+        ├── [auth]
+            ├── Auth.tsx
+            ├── Login.tsx
+            ├── Private.tsx
+            └── Profile.tsx
         ├── Button.tsx
         ├── [class]
             └── Counter.tsx

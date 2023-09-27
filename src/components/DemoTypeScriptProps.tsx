@@ -91,6 +91,7 @@ function GroupTypeScriptProps() {
             <div>
                 Button: <Button onClick={handleClick}>Accept</Button>
             </div>
+            <br />
             <div>
                 Input: <Input value='' onChange={(handleChange)} handleChangeInternally={true} />
             </div>
