@@ -2,8 +2,8 @@ import { useContext } from "react"
 import { UserContext } from "./UserContext"
 
 const defaultUser = {
-    name: 'Ricardo',
-    email: 'ricardo@default.com'
+    name: 'Songbird',
+    email: 'songbird@nightcity.com'
 }
 
 function User () {
