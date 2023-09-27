@@ -2,6 +2,8 @@ import Box from "./context/Box";
 import { ThemeContextProvider } from "./context/ThemeContext";
 import User from "./context/User";
 import { UserContextProvider } from "./context/UserContext";
+import DomRef from "./ref/DomRef";
+import MutableRef from "./ref/MutableRef";
 
 export default function DemoTypeScriptContextHook () {
     return <div>
@@ -13,5 +15,9 @@ export default function DemoTypeScriptContextHook () {
         <UserContextProvider>
             <User />
         </UserContextProvider>
+        <h3>useRef: Dom Refs Component</h3>
+        <DomRef />
+        <h3>useRef: Mutable Refs Component</h3>
+        <MutableRef />
     </div>
 }

@@ -39,11 +39,11 @@ Following is a list of the components and the features of TypeScript each demons
 
 ./src/components/context
 * **useContext Hook:** 3 components (theme, ThemeContext and Box) that demonstrates the useContext Hook implemented with TypeScript.
-* **User and UserContext:** Demonstrate using the useContext Hook in TypeScript with union types (Defining types that can be a null or a defined type value). 
+* **User and UserContext:** Demonstrate using the useContext Hook in TypeScript with union types (Defining types that can be a null or a defined type value).
+* **DomRef and MutableRef:** * useRef Hook with TypeScript.
 
 ### Components to Add in the Future
 
-* useRef Hook.
 * Class Component.
 * Component Props.
 * Generic Props.
@@ -157,8 +157,10 @@ README.md
         ├── [context]
             ├── Box.tsx
             ├── theme.ts
-            └── ThemeContext.tsx
-        ├── DemoTypeScriptContextHook.tsx
+            ├── ThemeContext.tsx
+            ├── User.tsx
+            └── UserContext.tsx
+        ├── DemoTypeScriptContextAndRefHook.tsx
         ├── DemoTypeScriptProps.tsx
         ├── DemoTypeScriptStateHooks.tsx
         ├── FictionAward.tsx
@@ -168,6 +170,9 @@ README.md
         ├── Person.tsx
         ├── Person.types.ts
         ├── PersonList.tsx
+        ├── [ref]
+            ├── DomRef.tsx
+            └── MutableRef.tsx
         ├── [state]
             ├── Counter.tsx
             ├── LoggedIn.tsx
