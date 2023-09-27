@@ -59,9 +59,11 @@ Following is a list of the Demo components, and a description of the TypeScript'
 ./src/components/template-literals
 * **Toast:** Component that shows how to use template literals to make combinations of union types.
 
+./src/components/html
+* **Custom Button and Input:** Demonstrates how to wrap HTML elements, like buttons and inputs, creating custom components that, in addition to the props that are standard to them (such as onClick and onChange), you can add your own props and logic.
+
 ### Components to Add in the Future
 
-* Wrapping HTML Elements.
 * Extracting a Component's Prop Types.
 * Polymorphic Components.
 
@@ -188,6 +190,9 @@ README.md
             └── List.tsx
         ├── Greet.tsx
         ├── Heading.tsx
+        ├── [html]
+            ├── Button.tsx
+            └── Input.tsx
         ├── Input.tsx
         ├── Person.tsx
         ├── Person.types.ts
