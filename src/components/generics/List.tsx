@@ -13,8 +13,8 @@ function List<T extends string | number | {}>({ itemName, items, onClick }: List
             const entries = Object.entries(item) //Returns the objects props, whatever they may be
             return (
                 <>
-                    {entries.map(
-                        ([key, value]) => <><b>{key}</b>: {value}<br /></>
+                    {entries.map( // key and value must be typed
+                        ([key, value]: [string, any], index) => <span key={index}><b>{key}</b>: {value}<br /></span>
                     )}
                     <br />
                 </>

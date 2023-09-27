@@ -3,6 +3,8 @@ import Auth from "./auth/Auth";
 import List from "./generics/List";
 import RandomNumber from "./restriction/RandomNumber";
 import Toast from "./template-literals/Toast";
+import CustomButton from "./html/Button";
+import CustomInput from "./html/Input";
 
 //Constants
 const starWarsCharactersList = ['Luke Skywalker', 'Han Solo', 'Leia Organa', 'Darth Vader', 'Emperor Palpatine']
@@ -89,6 +91,23 @@ function DemoAdvancedComponents () {
         />
         <h3>Toast Component With Template Literals</h3>
         <Toast position='left-center'/>
+        <h3>Button and Input Wrapping HTML Elements</h3>
+        <CustomButton
+            variant='primary'
+            onClick={
+                // Passes a function as a prop to the component. The Prop is an HTML Button Component Prop
+                () => console.log('Clicked')
+            }
+        >
+            HTML Wrap Button
+        </CustomButton>
+        <br /><br />
+        <CustomInput
+            onChange={
+                // Passes a function as a prop to the component. The Prop is an HTML Input Component Prop
+                (event) => console.log(`Input value set to: ${event.target.value}`)
+            }
+        />
     </div>
 }
 
