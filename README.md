@@ -53,9 +53,11 @@ Following is a list of the Demo components, and a description of the TypeScript'
 ./src/components/generics
 * **List:** Use of generic props to pass and list items of multiple types, including strings, numbers and any object.
 
+./src/components/restriction
+* **Random Number:** Demonstrates type restrictions on components' props.
+
 ### Components to Add in the Future
 
-* Restricting Props.
 * Template Literals and Exclude.
 * Wrapping HTML Elements.
 * Extracting a Component's Prop Types.
@@ -191,6 +193,8 @@ README.md
         ├── [ref]
             ├── DomRef.tsx
             └── MutableRef.tsx
+        ├── [restriction]
+            └── RandomNumber.tsx
         ├── [state]
             ├── Counter.tsx
             ├── LoggedIn.tsx
