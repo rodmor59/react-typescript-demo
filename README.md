@@ -56,9 +56,11 @@ Following is a list of the Demo components, and a description of the TypeScript'
 ./src/components/restriction
 * **Random Number:** Demonstrates type restrictions on components' props.
 
+./src/components/template-literals
+* **Toast:** Component that shows how to use template literals to make combinations of union types.
+
 ### Components to Add in the Future
 
-* Template Literals and Exclude.
 * Wrapping HTML Elements.
 * Extracting a Component's Prop Types.
 * Polymorphic Components.
@@ -200,7 +202,9 @@ README.md
             ├── LoggedIn.tsx
             ├── User.tsx
             └── UserWithTypeAssertion.tsx
-        └── Status.tsx
+        ├── Status.tsx
+        └── [template-literals]
+            └── Toast.tsx
     ├── index.css
     ├── index.tsx
     ├── logo.svg
