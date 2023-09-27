@@ -2,6 +2,7 @@ import Counter from "./class/Counter";
 import Auth from "./auth/Auth";
 import List from "./generics/List";
 import RandomNumber from "./restriction/RandomNumber";
+import Toast from "./template-literals/Toast";
 
 //Constants
 const starWarsCharactersList = ['Luke Skywalker', 'Han Solo', 'Leia Organa', 'Darth Vader', 'Emperor Palpatine']
@@ -53,7 +54,7 @@ function DemoAdvancedComponents () {
 
     return <div>
         <h2>Advanced Componets</h2>
-        <h3>Counter Class</h3>
+        <h3>Counter Class Component</h3>
         <Counter message='The count is: '/>
         <h3>Pass Profile Component as Props to Private Component</h3>
         <Auth />
@@ -86,6 +87,8 @@ function DemoAdvancedComponents () {
             value={0} 
             isZero
         />
+        <h3>Toast Component With Template Literals</h3>
+        <Toast position='left-center'/>
     </div>
 }
 
