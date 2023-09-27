@@ -17,7 +17,7 @@ I built this demo following the [Codevolution React TypeScript Tutorial](https:/
 
 This project encompasses multiple React Components written in TypeScript that demonstrate different functionalities, conventions and features of that programming language. 
 
-Following is a list of the components and the features of TypeScript each demonstrates:
+Following is a list of the Demo components, and a description of the TypeScript's features each one demonstrates:
 
 ./src/components
 
@@ -50,9 +50,11 @@ Following is a list of the components and the features of TypeScript each demons
 ./src/components/auth
 * **Private, Profile, Login and Auth:** These components demonstrate how to type components when passing a component as props to another.
 
+./src/components/generics
+* **List:** Use of generic props to pass and list items of multiple types, including strings, numbers and any object.
+
 ### Components to Add in the Future
 
-* Generic Props.
 * Restricting Props.
 * Template Literals and Exclude.
 * Wrapping HTML Elements.
@@ -178,6 +180,8 @@ README.md
         ├── DemoTypeScriptProps.tsx
         ├── DemoTypeScriptStateHooks.tsx
         ├── FictionAward.tsx
+        ├── [generics]
+            └── List.tsx
         ├── Greet.tsx
         ├── Heading.tsx
         ├── Input.tsx
