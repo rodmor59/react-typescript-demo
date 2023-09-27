@@ -8,7 +8,7 @@ type CounterState = {
     count: number
 }
 
-export class Counter extends Component<CounterProps, CounterState> {
+class Counter extends Component<CounterProps, CounterState> {
     state = {
         count: 0,
     }
@@ -21,9 +21,11 @@ export class Counter extends Component<CounterProps, CounterState> {
     render() {
         return (
             <div>
-                <button onClick={this.handleClick}>Increment</button><br />
+                <button onClick={this.handleClick}>Increment</button><br /><br />
                 {this.props.message} {this.state.count}
             </div>
         )
     }
 }
+
+export default Counter

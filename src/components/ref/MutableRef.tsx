@@ -38,7 +38,7 @@ function MutableRef () {
 
     return (
         <div>
-            HookTimer:&nbsp;{timer}<br />
+            HookTimer:&nbsp;{timer}<br /><br />
             <button onClick={startTimer} disabled={timerRunning}>{startResumeTxt} Timer</button>&nbsp;&nbsp;&nbsp;&nbsp; 
             <button onClick={stopTimer} disabled={!timerRunning}>Stop Timer</button>&nbsp;&nbsp;&nbsp;&nbsp; 
             <button onClick={resetTimer} disabled={((timer === 0) && (!timerRunning))}>Reset Timer</button>

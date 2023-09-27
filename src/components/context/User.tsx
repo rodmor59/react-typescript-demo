@@ -19,7 +19,7 @@ function User () {
     return (
         <div>
             <button onClick={handleLogin}>Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout}>Logout</button><br /><br />
             {userContext.user ? <>
                 <div>User name is {userContext.user.name}</div>
                 <div>User email is {userContext.user.email}</div>
