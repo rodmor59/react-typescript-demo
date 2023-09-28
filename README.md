@@ -63,9 +63,8 @@ Following is a list of the Demo components, and a description of the TypeScript'
 * **Custom Button and Input:** Demonstrates how to wrap HTML elements, like buttons and inputs, creating custom components that, in addition to the props that are standard to them (such as onClick and onChange), you can add your own props and logic.
 * **Custom Greet Component:** Extracts the Greet component prop types and use them in this component with an slightly different functionality.
 
-### Components to Add in the Future
-
-* Polymorphic Components.
+./src/components/polymorphic
+* **Text:** Polymorphic components, which can be rendered as different HTML elements or components based on a prop value. Provide type safety and ensure that the "as" prop only accepts valid HTML elements or components.
 
 ## Technologies
 
@@ -198,6 +197,8 @@ README.md
         ├── Person.tsx
         ├── Person.types.ts
         ├── PersonList.tsx
+        ├── [polymorphic]
+            └── Text.tsx
         ├── [ref]
             ├── DomRef.tsx
             └── MutableRef.tsx
@@ -222,7 +223,7 @@ tsconfig.json
 
 ## Project Status
 
-Project is: In Progress. 
+Project is: Completed. 
 
 Feel free to make suggestions on how to improve the project.
 
