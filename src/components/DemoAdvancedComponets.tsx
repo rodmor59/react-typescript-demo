@@ -5,6 +5,7 @@ import RandomNumber from "./restriction/RandomNumber";
 import Toast from "./template-literals/Toast";
 import CustomButton from "./html/Button";
 import CustomInput from "./html/Input";
+import CustomComponent from "./html/CustomComponent";
 
 //Constants
 const starWarsCharactersList = ['Luke Skywalker', 'Han Solo', 'Leia Organa', 'Darth Vader', 'Emperor Palpatine']
@@ -107,6 +108,19 @@ function DemoAdvancedComponents () {
                 // Passes a function as a prop to the component. The Prop is an HTML Input Component Prop
                 (event) => console.log(`Input value set to: ${event.target.value}`)
             }
+        />
+        <h3>Custom Component (Extracting a Component’s Prop Types)</h3>
+        <h4>User is not logged in</h4>
+        <CustomComponent 
+            isLoggedIn
+            name='Mr. Bach'
+            messageCount={4}
+        />
+        <h4>User is logged in</h4>
+        <CustomComponent 
+            isLoggedIn={false}
+            name='Thomas'
+            messageCount={6}
         />
     </div>
 }

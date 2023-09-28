@@ -67,8 +67,9 @@ function GroupTypeScriptProps() {
             <h3>Basic Props</h3>
             <h4>Greet Component</h4>
             <Greet
-                name='Ricardo'
+                name='Thomas'
                 isLoggedIn={true}
+                messageCount={12}
             />
             <h4>Person Component</h4>
             <Person 
