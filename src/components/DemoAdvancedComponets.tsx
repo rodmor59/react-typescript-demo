@@ -6,6 +6,7 @@ import Toast from "./template-literals/Toast";
 import CustomButton from "./html/Button";
 import CustomInput from "./html/Input";
 import CustomComponent from "./html/CustomComponent";
+import Text from "./polymorphic/Text";
 
 //Constants
 const starWarsCharactersList = ['Luke Skywalker', 'Han Solo', 'Leia Organa', 'Darth Vader', 'Emperor Palpatine']
@@ -122,6 +123,11 @@ function DemoAdvancedComponents () {
             name='Thomas'
             messageCount={6}
         />
+        <h3>Text Polymorphic Component</h3>
+        <Text size='large' as='h2'>Title</Text>
+        <Text size='medium' as='h3'>Subheading</Text>
+        <Text size='medium' as='p'>Paragraph</Text>
+        <Text size='small' color='secondary' as='label' htmlFor='someId'>Label</Text>
     </div>
 }
 
